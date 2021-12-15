@@ -1,10 +1,25 @@
 import React, { Component } from "react";
+// import {Link} from 'react-router-dom';
+
 
 class Form extends Component {
+
+  handleSubmit = (event) =>{
+    event.preventDefault();
+    const title = event.target.elements.title.value
+    const picture = event.target.elements.picture.value
+    const description = event.target.elements.description.value
+    const author = event.target.elements.author.value
+    const date = event.target.elements.date.value 
+
+    this.props.setInfo(title, picture, description, author, date)
+ 
+}
+
   render() {
     return (<div>
         <h1>Añade una noticia: </h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>Titular: </label>
               <input type="text" id="title" name="title"/> <br /><br />
           <label>Imagen: </label>

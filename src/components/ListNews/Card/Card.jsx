@@ -2,13 +2,16 @@ import React, { Component } from "react";
 
 class Card extends Component {
   render() {
+
+    const {title,picture,description,author,date} = this.props.infoNew
+
     return (
       <div className='cardContainer'>
-          <h1>Titular</h1>      
-          <img src="https://static.dw.com/image/47222941_401.png" alt="new"/>
-          <p>Descripción</p> 
-          <p>Autor</p>   
-          <p>Fecha</p> 
+          <h1>{title}</h1>      
+          <img src={picture} alt={title}/>
+          <p>{description}</p> 
+          <p>{author}</p>   
+          <p>{date}</p> 
           
           <button onClick={this.props.delete}>Borrar</button>
 
