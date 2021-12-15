@@ -1,0 +1,26 @@
+/* 
+Paleta
+#D8CFAF -> Blanca
+#EC4E20 -> Naranja
+#000022 -> Azul oscuro*/
+
+nav{
+    background-color:#EC4E20;
+    width: 100%; 
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0px;
+    color:#D8CFAF; 
+}
+
+li{
+    text-decoration: none;
+    margin:10px;
+    color:#D8CFAF;
+}
