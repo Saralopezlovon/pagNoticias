@@ -6,7 +6,8 @@ Paleta
 
 nav{
     background-color:#EC4E20;
-    width: 100%; 
+    width: 100%;
+    padding:10px; 
 }
 
 ul{
@@ -19,8 +20,9 @@ ul{
     color:#D8CFAF; 
 }
 
-li{
+li a{
     text-decoration: none;
     margin:10px;
     color:#D8CFAF;
+    text-decoration: none;
 }

@@ -16,8 +16,8 @@ function App() {
       </userContext.Provider>      
 
     </BrowserRouter>
-  
     <Footer/>
+  
   </div>
   );
 }

@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-// import {Link} from 'react-router-dom';
+import { Navigate } from 'react-router'
 
 
 class Form extends Component {
+
+  state = {
+    redirect: false
+  }
 
   handleSubmit = (event) =>{
     event.preventDefault();
@@ -13,10 +17,18 @@ class Form extends Component {
     const date = event.target.elements.date.value 
 
     this.props.setInfo(title, picture, description, author, date)
+
+    this.setState({ redirect: true });
  
 }
 
   render() {
+    const { redirect } = this.state;
+
+     if (redirect) {
+       return <Navigate to='/list'/>;
+     }
+
     return (<div>
         <h1>Añade una noticia: </h1>
         <form onSubmit={this.handleSubmit}>
