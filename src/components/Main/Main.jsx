@@ -53,7 +53,7 @@ class Main extends Component {
 
 
   render() {
-    console.log(this.state.newList)
+    // console.log(this.state.newList)
     return (
       <main>
             <Routes>
