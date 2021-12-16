@@ -18,11 +18,25 @@ class Main extends Component {
     };
 
     //Añadir al estado lo que me traiga del fetch
-    componentDidMount() {
+    async componentDidMount() {
 
-      axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=${process.env.REACT_APP_KEY}`)
-        .then(res => console.log(res))
+      const resp = await axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=${process.env.REACT_APP_KEY}`)
+      const data = resp.data.results
+
+      //Hago un bucle y creo un objeto para poder chutarselo al state 
+
+      const newApi = data.map((item)=>{
+        return {title: item.title, 
+        picture: item.multimedia[0].url, 
+        description: item.abstract,
+        author: item.byline,
+        date: item.published_date}
+      }).slice(0,5)  
+
+      this.setState({ newList: [...this.state.newList,...newApi] })
+      
     }
+
     //Declarar una función que modifique el estado del padre y se cambie por lo que recoja el hijo
     //Desde el hijo se pasa como parámetros lo recogido del formulario y se cambia el estado con un setState
     setInfo = (title, picture, description, author, date) =>{
