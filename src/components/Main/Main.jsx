@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Home from '../Home'
 import Form from '../Form'
 import ListNews from '../ListNews'
+import axios from 'axios'
 
 import {Route, Routes} from 'react-router-dom'; //Para las rutas
 
@@ -16,6 +17,12 @@ class Main extends Component {
       }
     };
 
+    //Añadir al estado lo que me traiga del fetch
+    componentDidMount() {
+
+      axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=${process.env.REACT_APP_KEY}`)
+        .then(res => console.log(res))
+    }
     //Declarar una función que modifique el estado del padre y se cambie por lo que recoja el hijo
     //Desde el hijo se pasa como parámetros lo recogido del formulario y se cambia el estado con un setState
     setInfo = (title, picture, description, author, date) =>{
