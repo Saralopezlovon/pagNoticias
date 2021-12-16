@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav'
 import {userContext} from '../../context/userContext'
 
 
-export class Header extends Component {
+class Header extends Component {
     render() {
         return (
             <header>
