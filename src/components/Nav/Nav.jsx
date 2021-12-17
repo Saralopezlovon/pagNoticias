@@ -8,9 +8,9 @@ class Nav extends Component {
     return <nav>
     <userContext.Consumer>
       {
-          value => value.user ? <div>
+          value => value.user ? <div className="greeting">
               <h3>Bienvenido {value.user} </h3>
-              <button onClick={value.logout}>Logout</button>
+              <button className="btn-logout" onClick={value.logout}>Logout</button>
           </div> : ""
       }
     </userContext.Consumer>   

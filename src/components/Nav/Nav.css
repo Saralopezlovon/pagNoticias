@@ -8,7 +8,28 @@ nav{
     background-color:#EC4E20;
     width: 100%;
     padding:10px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.greeting{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h3{
+    color:white;
+}
+
+.btn-logout{
+    margin-left:10px ;
+    height: 20px ;
+}
+
 
 ul{
     list-style: none;
@@ -16,13 +37,13 @@ ul{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin:0px;
-    color:#D8CFAF; 
+    margin-right: 10px;
+    
 }
 
 li a{
     text-decoration: none;
     margin:10px;
-    color:#D8CFAF;
+    color:white;
     text-decoration: none;
 }
