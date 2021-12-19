@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Card.css"
 
 class Card extends Component {
   render() {
@@ -6,14 +7,14 @@ class Card extends Component {
     const {title,picture,description,author,date} = this.props.infoNew
 
     return (
-      <div className='cardContainer'>
-          <h1>{title}</h1>      
-          <img src={picture} alt={title}/>
-          <p>{description}</p> 
-          <p>{author}</p>   
-          <p>{date}</p> 
+      <div className="cardContainer">
+          <h1 className="title-card">{title}</h1>      
+          <img className="img-card"src={picture} alt={title}/>
+          <p className="description-card">{description}</p> 
+          <p className="author-card">{author}</p>   
+          <p className="date-card">{date}</p> 
           
-          <button onClick={this.props.delete}>Borrar</button>
+          <button className="btn-delete" onClick={this.props.delete}>Borrar</button>
 
       </div>
 

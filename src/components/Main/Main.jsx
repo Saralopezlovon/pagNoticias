@@ -3,6 +3,8 @@ import Home from '../Home'
 import Form from '../Form'
 import ListNews from '../ListNews'
 import axios from 'axios'
+import "./Main.css"
+
 
 import {Route, Routes} from 'react-router-dom'; //Para las rutas
 
@@ -55,7 +57,7 @@ class Main extends Component {
   render() {
     // console.log(this.state.newList)
     return (
-      <main>
+      <main className="body-main">
             <Routes>
               <Route path="/" element={<Home/>} exact />
               <Route path="/form" element={<Form setInfo={this.setInfo} />} />

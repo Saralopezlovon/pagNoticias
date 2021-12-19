@@ -9,7 +9,7 @@ class Nav extends Component {
     <userContext.Consumer>
       {
           value => value.user ? <div className="greeting">
-              <h3>Bienvenido {value.user} </h3>
+              <p className="titleGreeting">Bienvenid@ {value.user} </p>
               <button className="btn-logout" onClick={value.logout}>Logout</button>
           </div> : ""
       }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card/Card"
+import "./ListNews.css"
 
 class ListNews extends Component {
 
@@ -8,7 +9,7 @@ class ListNews extends Component {
   }
 
   render() {
-    return (<div>
+    return (<div className="news-container">
         {this.paintNews()}
       </div>)      
   }

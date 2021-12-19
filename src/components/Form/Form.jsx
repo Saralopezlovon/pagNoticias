@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Navigate } from 'react-router'
+import { Navigate } from 'react-router';
+import "./Form.css"
 
 
 class Form extends Component {
@@ -29,20 +30,20 @@ class Form extends Component {
        return <Navigate to='/list'/>;
      }
 
-    return (<div>
-        <h1>Añade una noticia: </h1>
+    return (<div className="body-container">
+        <h1 className="title">Añade una noticia: </h1>
         <form onSubmit={this.handleSubmit}>
-          <label>Titular: </label>
-              <input type="text" id="title" name="title"/> <br /><br />
+          <label>Titulo: </label>
+              <input type="text" id="title" name="title" placeholder="Titulo de la noticia"/> <br /><br />
           <label>Imagen: </label>
-              <input type="url" id="picture" name="picture" /><br /><br />                        
-          <label>Descripción: </label>
-              <input type="text" id="description" name="description" /><br /><br />
+              <input type="url" id="picture" name="picture" placeholder="Url de la imagen" /><br /><br />                        
+          <label>Descripción: </label><br />
+              <textarea rows="9" cols="40" id="description" name="description" placeholder="Descripción de la noticia" /><br /><br />
           <label>Autor: </label>
-              <input type="text" id="author" name="author" /><br /><br /> 
+              <input type="text" id="author" name="author" placeholder="Autor de la noticia"/><br /><br /> 
           <label>Fecha: </label>
               <input type="date" id="date" name="date" /><br /><br />                       
-          <input type="submit" />
+          <input className="form-submit" type="submit" />
 
         </form> 
       </div>);
