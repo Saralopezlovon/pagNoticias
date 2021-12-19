@@ -1,0 +1,83 @@
+.cardContainer{
+    border:1px solid #CBCBCB;
+    width:400px;
+    margin:15px;
+    padding: 10px;
+    -webkit-box-shadow: 7px 7px 34px -9px rgba(33,31,33,0.65);
+    -moz-box-shadow: 7px 7px 34px -9px rgba(33,31,33,0.65);
+    box-shadow: 7px 7px 34px -9px rgba(33,31,33,0.65);
+
+
+    border-radius: 16px 16px 16px 16px;
+    -moz-border-radius: 16px 16px 16px 16px;
+    -webkit-border-radius: 16px 16px 16px 16px;
+    border: 0px solid #000000;
+    padding-bottom: 30px;
+}
+
+.title-card{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.img-card{
+    width: 400px;
+    height: 227px;
+
+}
+
+.description-card{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;    
+    font-size: 15px;
+    margin-bottom:0px;
+
+}
+
+.author-card{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;    
+    font-size: 13px;
+    text-align: right;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom:0px;
+    padding-right: 27px;
+
+}
+
+.date-card{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;    
+    font-size: 13px;
+    text-align: right;
+    font-style: italic;
+    margin-top: 0px;
+    padding-right: 27px;
+}
+
+.btn-delete {
+    width: 350px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    background: #FF715B;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    border: 0px solid #000000;
+    cursor: pointer;   
+  }
+  
+  .btn-delete:hover {
+    background: #FF715B;
+    background-image: -webkit-linear-gradient(top, #FF715B, #f7634d);
+    background-image: -moz-linear-gradient(top, #FF715B, #f7634d);
+    background-image: -ms-linear-gradient(top, #FF715B, #f7634d);
+    background-image: -o-linear-gradient(top, #FF715B, #f7634d);
+    background-image: linear-gradient(to bottom, #FF715B, #f7634d);
+  }

@@ -1,0 +1,6 @@
+.news-container{
+    width: 1350px;
+    display:flex;
+    flex-wrap: wrap; 
+    padding-bottom: 60px;   
+}
