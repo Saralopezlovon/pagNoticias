@@ -2,7 +2,7 @@
 
 Página web en la que aparecerán las noticias más populares, te podrás loguear y añadir tus propias noticias.
 
-![imagen](https://github.com/Saralopezlovon/Proyecto_idiomas/blob/main/src/assets/webNoticias.gif)
+![imagen](https://github.com/Saralopezlovon/pagNoticias/src/assets/webNoticias.gif)
 
 ## Construido con 🛠️
 
